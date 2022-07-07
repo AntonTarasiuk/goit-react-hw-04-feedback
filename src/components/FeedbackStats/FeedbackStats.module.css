@@ -1,0 +1,33 @@
+.buttonsList {
+    display: flex;
+}
+
+.buttonEl:not(:last-child) {
+    margin-right: 10px;
+}
+
+.statEl:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+button {
+    padding: 0 10px;
+    /* width: 100px; */
+
+    font-size: 15px;
+    font-weight: 700;
+
+    background-color: #fff;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    outline: none;
+}
+
+.statTitle {
+    display: inline;
+    margin-right: 5px;
+}
+
+section {
+    align-self: start;
+}
