@@ -1,4 +1,4 @@
-import { Feedbacks } from "./FeedbackStats/FeedbackStats";
+import { Section } from "./Section/Section";
 
 export const App = () => {
   return (
@@ -8,13 +8,12 @@ export const App = () => {
         display: 'flex',
         textAlign: 'left',
         flexDirection: 'column',
-        justifyContent: 'center',
         alignItems: 'center',
         fontSize: 20,
         color: '#010101'
       }}
     >
-      <Feedbacks />
+      <Section />
     </div>
   );
 };

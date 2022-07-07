@@ -1,0 +1,8 @@
+.statEl:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.statTitle {
+    display: inline;
+    margin-right: 5px;
+}

@@ -6,10 +6,6 @@
     margin-right: 10px;
 }
 
-.statEl:not(:last-child) {
-    margin-bottom: 10px;
-}
-
 button {
     padding: 0 10px;
     /* width: 100px; */
@@ -21,13 +17,4 @@ button {
     border: 1px solid lightgrey;
     border-radius: 5px;
     outline: none;
-}
-
-.statTitle {
-    display: inline;
-    margin-right: 5px;
-}
-
-section {
-    align-self: start;
 }
