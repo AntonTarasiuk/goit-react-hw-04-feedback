@@ -11,17 +11,11 @@ export class Section extends Component {
 
     handleFeedback = (event) => {
         const targetName = event.target.name
-        // console.log(targetName)
-        this.setState(prevState => {
-            for (const key in prevState) {
-                if (key === targetName) {
-                    return prevState[key] += 1;
-                }
-            }
-            
-        })
-            // console.log(prevState)
-            // [key]: prevState.key + 1
+        this.setState(prevState => 
+            ({
+                [targetName]: prevState[targetName] + 1
+            })
+        )
     }
 
     countTotalFeedback = () => {
@@ -38,7 +32,6 @@ export class Section extends Component {
     render () {
         const { good, neutral, bad } = this.state;
         const options = Object.keys(this.state);
-        // const goodFeedbackPercentage = good / this.countTotalFeedback() * 100;
 
         return (
             <section>
